@@ -6,10 +6,11 @@ protected:
 	double petrol_amount;
 	double tank_volume;
 public:
+	Vehicle() {}
 	Vehicle(double p, double t);
 	double getTankVolume();
 	double getPetrolAmount();
-	void arrive();
-	bool leave();
+	virtual void arrive();
+	virtual bool leave();
 };
 

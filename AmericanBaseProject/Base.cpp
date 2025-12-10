@@ -45,6 +45,7 @@ void Base::PrintBaseInfo()
     cout << "Petrol ob base: " << petrol_on_base << endl;
     cout << "Goods ob base: " << goods_on_base << endl;
     cout << "=========================" << endl;
+    cout << endl;
 }
 
 void Base::RemovePeopleOnBase(int p)
@@ -68,5 +69,5 @@ bool Base::UsePetrol(double p)
 
 int Base::people_on_base = 20;
 int Base::vehicles_on_base = 5;
-double Base::petrol_on_base = 10;
+double Base::petrol_on_base = 50;
 double Base::goods_on_base = 15;
