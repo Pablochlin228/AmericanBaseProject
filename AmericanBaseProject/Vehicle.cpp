@@ -22,6 +22,7 @@ double Vehicle::getPetrolAmount()
 void Vehicle::arrive()
 {
 	Base::SetPeopleOnBase(1);
+	Base::SetVehiclesOnBase(1);
 }
 
 bool Vehicle::leave()

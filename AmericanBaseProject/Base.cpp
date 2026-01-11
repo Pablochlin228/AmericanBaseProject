@@ -58,6 +58,11 @@ void Base::RemoveVehiclesOnBase(int t)
     vehicles_on_base -= t;
 }
 
+void Base::RemoveGoodsOnBase(int g)
+{
+    goods_on_base -= g;
+}
+
 bool Base::UsePetrol(double p)
 {
     if (petrol_on_base >= p)

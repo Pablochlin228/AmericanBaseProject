@@ -18,6 +18,7 @@ public:
 	void PrintBaseInfo();
 	static void RemovePeopleOnBase(int p);
 	static void RemoveVehiclesOnBase(int t);
+	static void RemoveGoodsOnBase(int g);
 	static bool UsePetrol(double p);
 };
 

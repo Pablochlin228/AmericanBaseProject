@@ -16,14 +16,40 @@ int Bus::getMaxPeople()
 void Bus::arrive(Bus* bus)
 {
 	Base::SetPeopleOnBase(bus->getPeopleCount() + 1);
+	people = 0;
+	Base::SetVehiclesOnBase(1);
 }
 
 bool Bus::leave()
 {
-	//Vehicle::leave();
+	if (!Vehicle::leave())
+	{
+		return false;
+	}
 
-	int people_neeeded = max_people - people;
+	int people_on_base = Base::GetPeopleOnBase();
+	int available_seats = max_people;
+	int people_take;
+
+	if (people_on_base <= available_seats)
+	{
+		people_take = people_on_base;
+	}
+	else
+	{
+		people_take = available_seats;
+	}
 	
-
-	return false;
+	if (people_take > 0)
+	{
+		Base::RemovePeopleOnBase(people_take);
+		people = people_take;
+		cout << "Bus took " << people_take << " people from the base!" << endl;
+		return true;
+	}
+	else
+	{
+		cout << "Bus cant leave!" << endl;
+		return false;
+	}
 }

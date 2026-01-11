@@ -37,22 +37,28 @@ int main()
 			base.PrintBaseInfo();
 			break;
 		case 2:
-			vehicle = new Vehicle;
+			vehicle = new Vehicle(30,60);
+			vehicle->arrive();
 			break;
 		case 3:
-			vehicle = new Bus;
+			vehicle = new Bus(11,24,20,82);
+			vehicle->arrive();
 			break;
 		case 4:
-			vehicle = new Truck;
+			vehicle = new Truck(17.7,20.4,33,55);
+			vehicle->arrive();
 			break;
 		case 5:
-			vehicle = new Vehicle;
+			vehicle = new Vehicle(30, 60);
+			vehicle->leave();
 			break;
 		case 6:
-			vehicle = new Bus;
+			vehicle = new Bus(11, 24, 20, 82);
+			vehicle->leave();
 			break;
 		case 7:
-			vehicle = new Truck;
+			vehicle = new Truck(17.7, 20.4, 33, 55);
+			vehicle->leave();
 			break;
 		case 8:
 			cout << "Finishing the system......." << endl;
