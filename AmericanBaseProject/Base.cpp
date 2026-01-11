@@ -40,10 +40,10 @@ void Base::SetGoodsOnBase(double g)
 void Base::PrintBaseInfo()
 {
     cout << "======American Base======" << endl;
-    cout << "People ob base: " << people_on_base << endl;
-    cout << "Transport ob base: " << vehicles_on_base << endl;
-    cout << "Petrol ob base: " << petrol_on_base << endl;
-    cout << "Goods ob base: " << goods_on_base << endl;
+    cout << "People on base: " << people_on_base << endl;
+    cout << "Transport on base: " << vehicles_on_base << endl;
+    cout << "Petrol on base: " << petrol_on_base << endl;
+    cout << "Goods on base: " << goods_on_base << endl;
     cout << "=========================" << endl;
     cout << endl;
 }
